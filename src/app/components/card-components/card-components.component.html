@@ -1,0 +1,11 @@
+
+<div style="display: flex; width: 100%; flex-wrap: wrap;">
+    <div class="card" *ngFor="let i of pedidos">
+        <p class="senha"> Senha {{i.senha}} </p>
+        <p class="nome"> Nome: {{i.nome}} </p>
+        <div *ngFor="let j of i.itens">
+            <p> {{j.nome}} </p>
+        </div>
+        <button id="mais-informacoes" class="mais-informacoes" onclick="maisInformacoes()"> Mais Informações</button>
+    </div>
+</div>
